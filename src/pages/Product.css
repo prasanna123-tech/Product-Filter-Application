@@ -1,0 +1,5 @@
+.product-container {
+  min-height: 100vh;
+  padding: 100px 80px;
+  background: linear-gradient(135deg, #e9e4f0, #d3cce3);
+}
