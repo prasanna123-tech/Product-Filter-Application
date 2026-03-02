@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";  
 import "./Navbar.css";
-import { FaUserCircle } from "react-icons/fa";   // 👈 Added
+import { FaUserCircle } from "react-icons/fa";
 
 const Navbar = ({ title, search, setSearch, category, setCategory }) => {
+
+  const [showPopup, setShowPopup] = useState(false);   
+
   return (
     <div className="navbar">
         
@@ -24,11 +27,22 @@ const Navbar = ({ title, search, setSearch, category, setCategory }) => {
         <option value="Footwear">Footwear</option>
         <option value="Clothing">Clothing</option>
       </select>
-
-      {/* 👇 Account Icon Added */}
-      <div className="account-icon">
+     
+      <div 
+        className="account-icon"
+        onClick={() => setShowPopup(!showPopup)}
+      >
         <FaUserCircle size={32} />
       </div>
+
+      {showPopup && (
+        <div className="profile-popup">
+          <p>Welcome </p>
+          <button>Login</button>
+          <button>Register</button>
+          <button className="logout-btn">Logout</button>
+        </div>
+      )}
 
     </div>
   );
