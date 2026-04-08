@@ -40,7 +40,7 @@ const Navbar = ({ title, search, setSearch, category, setCategory }) => {
           <p>Welcome </p>
           <button>Login</button>
           <button>Register</button>
-          <button className="logout-btn">Logout</button>
+          <button >Logout</button>
         </div>
       )}
 

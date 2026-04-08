@@ -85,8 +85,8 @@
 
 .profile-popup {
   position: absolute;
-  top: 75px;
-  right: 30px;
+  top: 50px;
+  right: 120px;
 
   width: 180px;
   padding: 15px;
@@ -119,13 +119,6 @@
   background: #6d3aa5;
 }
 
-.logout-btn {
-  background: #c0392b;
-}
-
-.logout-btn:hover {
-  background: #e74c3c;
-}
 
 
 

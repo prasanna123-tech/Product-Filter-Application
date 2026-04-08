@@ -1,0 +1,48 @@
+.App{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;  
+    background-color: rgba(135, 57, 200, 0.8);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    height: 400px;
+    width: 300px;
+    border-radius: 10px;
+}
+input{
+    
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 200px;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.err{
+    color: red;
+    font-size: 15px;
+}
+button{
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color:  rgba(135, 57, 200, 0.8);
+    color: white;
+    cursor: pointer;
+    width: 100px;
+}
+
